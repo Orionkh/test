@@ -1,0 +1,116 @@
+@import "normalize.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url('../fonts/montserrat-bold-webfont.eot');
+  src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+       url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+       url('../fonts/montserrat-bold-webfont.ttf') format('truetype'),
+       url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'montserratblack';
+  src: url('../fonts/montserrat-black-webfont.eot');
+  src: url('../fonts/montserrat-black-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat-black-webfont.woff2') format('woff2'),
+       url('../fonts/montserrat-black-webfont.woff') format('woff'),
+       url('../fonts/montserrat-black-webfont.ttf') format('truetype'),
+       url('../fonts/montserrat-black-webfont.svg#montserratblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  font-family: 'montserratbold', sans-serif;
+  background: #c7d6b3;
+  color: #ffffff;
+}
+.main {
+  padding: 40px 20px;
+}
+.statistics-title {
+  text-align: center;
+  font-weight: bold;
+  font: 22px/26px 'montserratblack', sans-serif;
+}
+.statistics-list {
+  margin: 0 auto;
+  padding: 30px 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  max-width: 300px;
+}
+.statistics-list li {
+  width: 100%;
+  display: flex;
+  column-gap: 20px;
+}
+.statistics-img {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+.statistics-info {
+  padding: 0 40px 0 0;
+}
+.statistics-num {
+  color: #687a5c;
+  font-size: 25px;
+  font-family: 'montserratbold', sans-serif;
+  margin: 0 0 5px;
+}
+.statistics-descr {
+  font-weight: bold;
+}
+.stitistics-date {
+  font: 22px/26px 'montserratblack', sans-serif;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .statistics-title,
+  .stitistics-date {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .statistics-list {
+    padding: 60px 0;
+    gap: 40px 80px;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+  .statistics-list li {
+    width: 50%;
+    column-gap: 40px;
+    width: 320px;
+  }
+  .statistics-img {
+    width: 150px;
+    height: 150px;
+  }
+  .statistics-num {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .statistics-descr {
+    font-size: 20px;
+  }
+  .statistics-info {
+    padding: 0;
+    max-width: 150px;
+  }
+}
